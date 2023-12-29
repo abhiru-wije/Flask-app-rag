@@ -1,0 +1,360 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+i {
+  color: #ccc;
+}
+button {
+  z-index: 2;
+}
+body {
+  overflow-x: hidden;
+}
+.header {
+  padding: 4.375rem;
+}
+.header .logo {
+  width: 100px;
+  height: 92;
+}
+.main {
+}
+
+.main .seracSection {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+}
+.main .seracSection input {
+  width: 80%;
+  height: 80px;
+}
+.formBox {
+  margin-left: 10%;
+}
+.send {
+  margin-left: -3.5rem;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  margin-top: 2rem;
+  color: #ccc !important;
+}
+.banner {
+  background-color: #d2e0e6;
+  width: 100%;
+}
+.banner2 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./images/Mask2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.welcome {
+  margin-top: -4rem;
+  margin-bottom: 3rem;
+}
+.banner2 .blure {
+  background-color: #00000071;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+.banner2 .content {
+  width: 70%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+}
+.content {
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  justify-items: end;
+}
+.left {
+  width: 65%;
+}
+.right {
+  width: 35% !important;
+}
+.right div img {
+  width: 100%;
+  height: 100%;
+}
+.right div {
+  height: 100% !important;
+}
+.contentText p {
+  font-weight: 700;
+  line-height: 2rem;
+  font-size: 1.875rem;
+  margin-top: 2rem;
+  width: 39.75rem;
+  margin-bottom: 2rem;
+}
+.button {
+  display: flex;
+  align-items: center;
+}
+.button button {
+  background-color: #02a9f4;
+  width: 14.563rem;
+  height: 2.75rem;
+  border-radius: 3px !important;
+  color: #fff;
+  border: 2px solid #02a9f4;
+  transition: all 0.4s ease-in-out;
+  margin-right: 50px;
+}
+.button button:hover {
+  background-color: #fff;
+  color: #02a9f4;
+  border: 2px solid #02a9f4;
+}
+.cards {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+.cards-content {
+  width: 90%;
+  z-index: 2;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card1 {
+  width: 23%;
+  z-index: 2;
+}
+.icons {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+.icons span {
+  width: 20px;
+  height: 20px;
+}
+.desc {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.1rem;
+  color: #000;
+}
+.card .button {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card .button button {
+  width: 100%;
+}
+.footer {
+  background-color: #00385a;
+  width: 100%;
+  padding: 2rem 3rem;
+  position: fixed;
+  bottom: 0;
+}
+.footerLogo {
+  width: 100px;
+  height: 92px;
+}
+.footerLogo img {
+  width: 100%;
+}
+/* canvas start*/
+.canva1 {
+  position: absolute;
+  top: 0;
+  left: 15%;
+}
+.canva2 {
+  position: absolute;
+  top: -1%;
+  left: 85%;
+}
+.canva3 {
+  position: absolute;
+  top: 183%;
+  left: 0;
+}
+.canva4 {
+  position: absolute;
+  top: 156%;
+  left: 83%;
+  z-index: 0;
+  width: 258px;
+  height: 258px;
+}
+.like-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.like-button.animated {
+  -webkit-animation: pop 0.9s both;
+  animation: pop 0.9s both;
+}
+.like-button svg {
+  opacity: 1;
+}
+.like-button svg path {
+  fill: #333;
+  transition: fill .4s ease-out;
+}
+.like-button.active svg path {   
+  fill: #2196f3;
+ }
+
+ .unlike-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(-1, -1);
+}
+.unlike-button.animated {
+  -webkit-animation: pop 0.9s both;
+  animation: pop 0.9s both;
+}
+.unlike-button svg {
+  opacity: 1;
+}
+.unlike-button svg path {
+  fill: #333;
+  transition: fill .4s ease-out;
+}
+.unlike-button.active svg path {   
+  fill: #f32125;
+ }
+
+@-webkit-keyframes pop {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pop {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+} 
+
+/* canvas end*/
+
+/*media query start*/
+@media (max-width: 576px) {
+  header {
+    padding: 2rem !important;
+  }
+  .main .seracSection {
+    width: 79% !important;
+    margin: 1rem auto;
+  }
+  .main .seracSection input {
+    width: 100% !important;
+    margin-left: -1.2rem;
+    padding: 0.5rem;
+  }
+  .send {
+    margin-top: 1.8rem;
+    margin-left: -3rem;
+  }
+  .cards {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card1 {
+    width: 90%;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .canva4 {
+    top: 320% !important;
+    left: 70% !important;
+    z-index: 0 !important;
+  }
+  .canva3 {
+    top: 345% !important;
+    left: 0% !important;
+    z-index: 0 !important;
+  }
+  .banner {
+    margin-bottom: -6rem !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 992px) {
+}
+
+/*media query end */
